@@ -1,5 +1,5 @@
-import ShuksanImage from './assets/Shuksan.jpg'
-import Caravan from './assets/caravan.png'
+import ShuksanImage from '/Shuksan.jpg'
+import Caravan from '/caravan.png'
 import Kintsugi from './assets/kintsugi.png'
 import MBTA from './assets/mbta.png'
 import CKC from './assets/ckc.png'
@@ -53,7 +53,7 @@ function Home() {
             const data = {};
             for (const project of projectConfig) {
                 try {
-                    const response = await fetch(`/src/assets/projects/${project.id}.json`);
+                    const response = await fetch(`/projects/${project.id}.json`);
                     const projectJson = await response.json();
                     data[project.id] = projectJson;
                 } catch (error) {
@@ -67,7 +67,7 @@ function Home() {
             const data = {};
             for (const project of videoProjectConfig) {
                 try {
-                    const response = await fetch(`/src/assets/projects/${project.id}.json`);
+                    const response = await fetch(`/projects/${project.id}.json`);
                     const projectJson = await response.json();
                     data[project.id] = projectJson;
                 } catch (error) {

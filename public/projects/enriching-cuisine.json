@@ -5,10 +5,10 @@
   "type": "",
   "ref":"",
   "creationDate": "February 2025",
-  "tags": ["Video Production", "Food", "Education", "Cultural Diversity", "Children's Content"],  "mainImage": "/src/assets/Shuksan.jpg",
+  "tags": ["Video Production", "Food", "Education", "Cultural Diversity", "Children's Content"],  "mainImage": "Shuksan.jpg",
   "galleryImages": [
-    "/src/assets/Shuksan.jpg",
-    "/src/assets/Shuksan.jpg"
+    "Shuksan.jpg",
+    "Shuksan.jpg"
   ],
   "bodyText": "Enriching Cuisine represents a collaborative effort with Culture Kids Cuisine to create engaging, educational video content that introduces children to diverse culinary traditions from around the world. The project aimed to make cooking accessible and fun while teaching cultural appreciation and cooking skills.\n\nThe video series features step-by-step cooking tutorials, cultural background stories, and interactive elements designed to keep young viewers engaged throughout the cooking process. Each episode focuses on a different cultural tradition, explaining not just the 'how' but the 'why' behind various cooking techniques and ingredients.\n\nProduction involved careful consideration of child-friendly presentation, clear visual instruction, and culturally sensitive storytelling. The videos are designed to be both educational and entertaining, encouraging families to cook together while learning about different cultures and traditions."
 }

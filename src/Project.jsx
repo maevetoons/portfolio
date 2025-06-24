@@ -97,7 +97,7 @@ const Project = () => {
                                 src={projectData.mainImage}
                                 alt={projectData.title}
                                 onError={(e) => {
-                                    e.target.src = '/src/assets/Shuksan.jpg'; // Use Shuksan as fallback
+                                    e.target.src = 'Shuksan.jpg'; // Use Shuksan as fallback
                                 }}
                             />
                         </div>
@@ -131,7 +131,7 @@ const Project = () => {
                                     alt={`${projectData.title} gallery ${currentGalleryIndex + 1}`}
                                     className="gallery-image"
                                     onError={(e) => {
-                                        e.target.src = '/src/assets/Shuksan.jpg'; // Use Shuksan as fallback
+                                        e.target.src = 'Shuksan.jpg'; // Use Shuksan as fallback
                                     }}
                                 />
                                 {projectData.galleryImages.length > 1 && (

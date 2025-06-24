@@ -5,10 +5,10 @@
   "type": "",
   "ref": "",
   "creationDate": "June 2025",
-  "tags": ["React", "CSS", "JavaScript", "Physics Simulation", "Web Design", "Vite"],  "mainImage": "/src/assets/Shuksan.jpg",
+  "tags": ["React", "CSS", "JavaScript", "Physics Simulation", "Web Design", "Vite"],  "mainImage": "Shuksan.jpg",
   "galleryImages": [
-    "/src/assets/Shuksan.jpg",
-    "/src/assets/Shuksan.jpg"
+    "Shuksan.jpg",
+    "Shuksan.jpg"
   ],
   "bodyText": "This portfolio represents more than just a showcase of projects—it's a playground for experimental web technologies and interactive design. Built entirely from scratch using React and modern web technologies, every component has been carefully crafted to create a unique and engaging user experience.\n\nThe centerpiece of the portfolio is an interactive physics simulation that powers the skills section. Using custom-built physics engines, the skill icons behave as dynamic objects that respond to user interaction through realistic repulsion forces and collision detection. This creates an engaging way for visitors to explore technical competencies.\n\nThe design system emphasizes clean typography, thoughtful spacing, and subtle animations that enhance rather than distract from the content. The entire site is built with performance and accessibility in mind, featuring optimized loading, responsive design, and semantic HTML structure."
 }

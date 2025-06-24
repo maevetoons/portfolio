@@ -5,10 +5,10 @@
   "type": "",
   "ref": "",
   "creationDate": "January 2025",
-  "tags": ["React", "TypeScript", "AI/ML", "Education", "Note-taking", "Web App"],  "mainImage": "/src/assets/Shuksan.jpg",
+  "tags": ["React", "TypeScript", "AI/ML", "Education", "Note-taking", "Web App"],  "mainImage": "Shuksan.jpg",
   "galleryImages": [
-    "/src/assets/Shuksan.jpg",
-    "/src/assets/Shuksan.jpg"
+    "Shuksan.jpg",
+    "Shuksan.jpg"
   ],
   "bodyText": "Inspired by the Japanese art of kintsugi, where broken pottery is repaired with gold to create something more beautiful than the original, this application transforms the traditionally linear process of note-taking and learning into something dynamic and interconnected.\n\nThe platform features a unique node-based interface where ideas, notes, and concepts can be linked together in meaningful ways. As users write and learn, the system builds a rich graph of their knowledge, identifying connections and suggesting new pathways for exploration.\n\nKey innovations include adaptive spaced repetition algorithms, AI-powered content suggestions, and collaborative knowledge mapping. The application learns from user behavior to optimize the learning experience, making knowledge acquisition more efficient and enjoyable."
 }
