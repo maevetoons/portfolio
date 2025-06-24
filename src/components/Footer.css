@@ -1,0 +1,17 @@
+/* Footer styles */
+.footer {
+    position: relative;
+    z-index: 2;
+    margin-top: 3rem;
+    padding: 1.5rem 0 0.5rem 0;
+    width: 100%;
+}
+
+.footer-text p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-text b {
+    -webkit-text-stroke: .5px;
+}

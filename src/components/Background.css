@@ -1,0 +1,21 @@
+.background-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.background-wrapper:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/Grain_Effect.png");
+    background-repeat: repeat;
+    background-size: 1000px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+    filter: grayscale(100%);
+}

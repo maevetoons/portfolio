@@ -1,0 +1,16 @@
+{
+  "title": "Caravan",
+  "briefDescription": "Identity-focused travel utility to help you find your place in the World.",
+  "longDescription": "Caravan is a site aimed at helping travelers make informed decisions based on real experiences from people like them. Whether you're a trans person or a person of color searching for safe travel destinations, a parent seeking family-friendly vacation activities, or a traveler with religious restrictions on food, there's always a place for you in the world.",
+  "type":"Live Demo",
+  "ref": "https://www.figma.com/proto/L5R40xMulApXN7y8Ces77v/Caravan%3A-BU-Forge-Catalyst-Design-a-thon?node-id=24-952&t=wL4U48gAsuS5KOD5-1&scaling=min-zoom&content-scaling=fixed&page-id=27%3A493&starting-point-node-id=24%3A952&show-proto-sidebar=1",
+  "creationDate": "March 2025",
+  "tags": ["Figma", "Hackathon"],  "mainImage": "/src/assets/caravan.png",
+  "galleryImages": [
+    "/src/assets/Signed Homepage.png",
+    "/src/assets/Search Results.png",
+    "/src/assets/Destination Portfolio.png",
+    "/src/assets/Travel Log.png"
+  ],
+  "bodyText": "One problem our team members are very familiar with is trying to figure out if a travel destination is safe or accommodating for our identities as queer, trans, or women of color. We conducted user research on the intersection of identity and travel, and found that all participants consider inclusivity and accommodations for identity important when planning travel, with 80% factoring race/ethnicity and 50% factoring gender identity into their decision making. 70% of participants have faced safety concerns when traveling and lack information about local customs and cultural attitudes. 90% say that language barriers make it hard to navigate safely.\n\nA majority of participants also expressed that current travel resources lack identity-specific safety and inclusivity information, up-to-date and consistent information, and destination filtering based on personal needs.\n\nCaravan is a site aimed at helping travelers make informed decisions based on real experiences from people like them. Whether you're a trans person or a person of color searching for safe travel destinations, a parent seeking family-friendly vacation activities, or a traveler with religious restrictions on food, there's always a place for you in the world.\n\nGiven our user research, we incorporated the most requested features for an identity-based travel app, including reviews and safety from travelers with similar identities and personalized travel recommendations.\n\nCaravan features filtered searching to help you find travel destinations fit for your needs. Each destination has its own profile, which includes ratings and reviews from people who shared aspects of your identity, along with overall ratings across all users for comparison. The profile also includes personalized travel tips, providing a comprehensive summary of what you might expect visiting a location. Try Caravan and take the guesswork out of planning your next trip."
+}
