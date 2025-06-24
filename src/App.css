@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'Articulat CF Medium';
-  src: url('/fonts/ArticulatCF-Medium.otf') format('opentype');
+  src: url('/portfolio/fonts/ArticulatCF-Medium.otf') format('opentype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Optician Sans';
-  src: url('/fonts/OpticianSans.otf') format('opentype');
+  src: url('/portfolio/fonts/OpticianSans.otf') format('opentype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Kepler STD Bold Cn Subh';
-  src: url('/fonts/KeplerSTDBoldCnSubh.otf') format('opentype');
+  src: url('/portfolio/fonts/KeplerSTDBoldCnSubh.otf') format('opentype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Articulat CF Regular';
-  src: url('/fonts/ArticulatCF-Regular.otf') format('opentype');
+  src: url('/portfolio/fonts/ArticulatCF-Regular.otf') format('opentype');
   font-style: normal;
 }
 
