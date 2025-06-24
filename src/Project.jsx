@@ -16,7 +16,7 @@ const Project = () => {
         const loadProjectData = async () => {
             try {
                 setLoading(true);
-                const response = await fetch(`/src/assets/projects/${projectId}.json`);
+                const response = await fetch(`/projects/${projectId}.json`);
                 if (!response.ok) {
                     throw new Error('Project not found');
                 }
