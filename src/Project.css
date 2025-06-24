@@ -139,7 +139,7 @@
 }
 
 .gallery-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     max-height: 1000px;
     object-fit: cover;
