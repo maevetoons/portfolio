@@ -129,7 +129,7 @@
 /* Gallery Section - Float right for text wrapping */
 .project-gallery {
     float: right;
-    width: 840px;
+    max-width: 840px;
     margin: 0 0 20px 40px;
     z-index: 10;
 }
