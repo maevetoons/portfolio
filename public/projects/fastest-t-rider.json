@@ -1,14 +1,11 @@
 {
   "title": "The Fastest T Rider",
   "briefDescription": "Documenting the journey of breaking the record time to visit all MBTA subway stations.",
-  "longDescription": "An ambitious video project documenting the challenge of visiting every MBTA subway station in record time, combining urban exploration, transit optimization, and storytelling.",
-  "type": "",
+  "longDescription": "Documenting the journey of breaking the record time to visit all MBTA subway stations.",
+  "type": "Video Coming Soon",
   "ref": "",
-  "creationDate": "April 2025",
-  "tags": ["Video Production", "Urban Exploration", "Transportation", "Challenge", "Documentary"],  "mainImage": "/Shuksan.jpg",
-  "galleryImages": [
-    "/Shuksan.jpg",
-    "/Shuksan.jpg"
-  ],
-  "bodyText": "The Fastest T Rider project began as a simple challenge: could someone visit every single MBTA subway station in Boston in the shortest time possible? What started as a fun idea evolved into a comprehensive documentary project that explores Boston's transit system, urban geography, and the communities connected by public transportation.\n\nThe project required extensive planning and optimization, including route analysis, schedule coordination, and timing strategies. Using data analysis and mapping tools, I developed the most efficient path through all 51 subway stations across the Red, Blue, Orange, and Green lines.\n\nBeyond the challenge itself, the video captures the diverse neighborhoods and communities that make up Boston, showing how public transit serves as the vital connective tissue of the city. The final production combines action-packed documentation of the record attempt with thoughtful commentary on urban planning and public transportation."
+  "creationDate": "Expected: July 2025",
+  "tags": ["Documentary", "Challenge"],  "mainImage": "/Shuksan.jpg",
+  "galleryImages": [],
+  "bodyText": "I love trains. As a Brooklyn native, the enigmatic MTA subway system has captured my curiousity ever since I started learning to commute on my own.\n\nAbout a year ago, I stumbled upon the Wikipedia page for the Rapid Transit Challenge, a speedrunning challenge that started in the 40s as one man's sentimental gesture and has today evolved into a highly prized Guiness World Record title. The current record is held by Kate Jones at 22 hours, 14 minutes, and 10 seconds. In my current point in life, however, I seem to be stuck at university in Cambridge, and the 472 interwoven stations of the MTA are far out of reach. Then I thought to myself, ''Boston has a subway station too.'' (curiously dubbed the MBTA). And thus, I had my vision in mind. A much shorter record, a much simpler route, and mcuh closer to home."
 }

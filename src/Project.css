@@ -69,15 +69,31 @@
 
     .project-ref {
         color: #FFFFFF;
+        background: linear-gradient(to top,
+                    rgba(74,74,74,1) 0%,
+                    rgba(74,74,74,.5) 75%,
+                    rgba(74,74,74,.25) 100%);
+                ;
+        padding: 0 10px 0 10px;
+        border-radius: 5px;
+        vertical-align: middle;
+        border: #FFFFFF 1px solid;
+
+        h3 {
+        font-size: 20px;
+        }
     }
 
-    &::before {
-        color: linear-gradient(to right,
+    .project-ref:hover {
+        background: linear-gradient(to right,
                 #376853 0%,
                 #A1B24A 33%,
                 #D3B344 66%,
                 #EB843F 100%);
             ;
+        border: none;
+        padding: .741px 10.741px .741px 10.741px;
+        color: #000000;
     }
 }
 

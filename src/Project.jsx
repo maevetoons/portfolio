@@ -153,7 +153,7 @@ const Project = () => {
                             <h1 className="project-title">{projectData.title}</h1>
                             <p className="project-description">{projectData.longDescription}</p>
                             <div className="project-meta">
-                                <a className="project-ref" href={projectData.ref}>{projectData.type}</a>
+                                <a className="project-ref" href={projectData.ref}><h3>{projectData.type}</h3></a>
                                 <div className="project-tags">
                                     <div className='gradient'>
                                         {projectData.tags.map((tag, index) => (
