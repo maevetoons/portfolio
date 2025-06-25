@@ -1,11 +1,11 @@
 {
   "title": "This Portfolio?",
   "briefDescription": "You never believe what this leads to.",
-  "longDescription": "A hand-crafted portfolio website built from scratch featuring advanced physics simulations, dynamic interactions, and a modern design system. This project showcases both technical skills and design sensibility.",
-  "type": "",
-  "ref": "",
+  "longDescription": "My most up-to-date portfolio website, featuring a custom design system, experimental physics simulations, and dynamic interactions.",
+  "type": "Live Site",
+  "ref": "https://portfolio-nu-ashen-14.vercel.app/",
   "creationDate": "June 2025",
-  "tags": ["React", "CSS", "JavaScript", "Physics Simulation", "Web Design", "Vite"],  "mainImage": "/Shuksan.jpg",
+  "tags": ["React", "CSS3", "HTML5", "JavaScript"],  "mainImage": "/Shuksan.jpg",
   "galleryImages": [
     "/Shuksan.jpg",
     "/Shuksan.jpg"

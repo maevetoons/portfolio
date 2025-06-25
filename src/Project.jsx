@@ -11,6 +11,7 @@ const Project = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
+    const [gallerySize, setGallerySize] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
         const loadProjectData = async () => {
@@ -33,6 +34,52 @@ const Project = () => {
             loadProjectData();
         }
     }, [projectId]);
+
+    // Calculate gallery size after projectData is loaded
+    useEffect(() => {
+        if (projectData && projectData.galleryImages && projectData.galleryImages.length > 0) {
+            let loaded = 0;
+            let maxWidth = 0;
+            let maxHeight = 0;
+            const images = [];
+            projectData.galleryImages.forEach((src, i) => {
+                const img = new window.Image();
+                img.onload = function () {
+                    maxWidth = Math.max(maxWidth, img.naturalWidth);
+                    maxHeight = Math.max(maxHeight, img.naturalHeight);
+                    loaded++;
+                    if (loaded === projectData.galleryImages.length) {
+                        // Cap the max width/height
+                        let width = Math.min(maxWidth, 840);
+                        let height = Math.min(maxHeight, 1000);
+                        // If the widest image is > 840, scale height proportionally
+                        if (maxWidth > 840) {
+                            height = Math.round((840 / maxWidth) * maxHeight);
+                            if (height > 1000) {
+                                height = 1000;
+                            }
+                            width = 840;
+                        }
+                        // If the tallest image is > 1000, scale width proportionally
+                        if (height > 1000) {
+                            width = Math.round((1000 / height) * width);
+                            height = 1000;
+                        }
+                        setGallerySize({ width, height });
+                    }
+                };
+                img.onerror = function () {
+                    loaded++;
+                    if (loaded === projectData.galleryImages.length) {
+                        // fallback if all fail
+                        setGallerySize({ width: 840, height: 1000 });
+                    }
+                };
+                img.src = src;
+                images.push(img);
+            });
+        }
+    }, [projectData]);
 
     const nextImage = () => {
         if (projectData?.galleryImages) {
@@ -88,7 +135,8 @@ const Project = () => {
 
     return (
         <Background>
-            <NavBar />            <div className="project-container">
+            <NavBar />
+            <div className="project-container">
                 {/* Project Header */}
                 <div className="project-header">
                     <div className="project-header-content">
@@ -125,11 +173,13 @@ const Project = () => {
                 <div className="project-body">
                     {/* Gallery Section */}
                     {projectData.galleryImages && projectData.galleryImages.length > 0 && (
-                        <div className="project-gallery">
-                            <div className="gallery-container">                                <img
+                        <div className="project-gallery" style={{ width: gallerySize.width || 840, height: gallerySize.height || 1000 }}>
+                            <div className="gallery-container" style={{ width: '100%', height: '100%' }}>
+                                <img
                                     src={projectData.galleryImages[currentGalleryIndex]}
                                     alt={`${projectData.title} gallery ${currentGalleryIndex + 1}`}
                                     className="gallery-image"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }}
                                     onError={(e) => {
                                         e.target.src = '/Shuksan.jpg'; // Use Shuksan as fallback
                                     }}
