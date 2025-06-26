@@ -323,68 +323,7 @@ const SkillGraph = ({ skills }) => {
                 ctx.drawImage(img, node.x - halfSize, node.y - halfSize, adaptiveSizes.imageSize, adaptiveSizes.imageSize);
                 ctx.restore();
             }
-
-            // Draw object boundary (red, semi-transparent)
-            // ctx.beginPath();
-            // ctx.arc(node.x, node.y, OBJECT_RADIUS, 0, 2 * Math.PI);
-            // ctx.strokeStyle = 'rgba(255, 0, 0, 0.3)';
-            // ctx.stroke();
-
-            // Draw repel boundary (yellow, semi-transparent)
-            // ctx.beginPath();
-            // ctx.arc(node.x, node.y, REPEL_RADIUS, 0, 2 * Math.PI);
-            // ctx.strokeStyle = 'rgba(255, 255, 0, 0.3)';            // ctx.stroke();
-
-            // Draw force arrow (blue, semi-transparent)
-            // const forceMagnitude = Math.sqrt(node.fx * node.fx + node.fy * node.fy);
-            // if (forceMagnitude > 0) {
-            //     const arrowLength = Math.min(forceMagnitude * 0.01, 50); // Adjusted scale factor
-            //     const angle = Math.atan2(node.fy, node.fx);
-
-            //     ctx.beginPath();
-            //     ctx.moveTo(node.x, node.y);
-            //     ctx.lineTo(
-            //         node.x + Math.cos(angle) * arrowLength,
-            //         node.y + Math.sin(angle) * arrowLength
-            //     );
-            //     ctx.strokeStyle = 'rgba(0, 0, 255, 0.5)';
-            //     ctx.lineWidth = 2;
-            //     ctx.stroke();
-
-            //     // Draw arrowhead
-            //     const arrowHeadLength = 10;
-            //     const arrowHeadAngle = Math.PI / 6;
-            //     const arrowEndX = node.x + Math.cos(angle) * arrowLength;
-            //     const arrowEndY = node.y + Math.sin(angle) * arrowLength;
-
-            //     ctx.beginPath();
-            //     ctx.moveTo(arrowEndX, arrowEndY);
-            //     ctx.lineTo(
-            //         arrowEndX - arrowHeadLength * Math.cos(angle + arrowHeadAngle),
-            //         arrowEndY - arrowHeadLength * Math.sin(angle + arrowHeadAngle)
-            //     );
-            //     ctx.lineTo(
-            //         arrowEndX - arrowHeadLength * Math.cos(angle - arrowHeadAngle),
-            //         arrowEndY - arrowHeadLength * Math.sin(angle - arrowHeadAngle)
-            //     );
-            //     ctx.closePath();
-            //     ctx.fillStyle = 'rgba(0, 0, 255, 0.5)';
-            //     ctx.fill();
-            // }
-        });        // Draw cursor boundaries if cursor is in container
-        // if (cursorPosition.isInContainer) {
-        //     // Draw cursor object boundary (red, semi-transparent)
-        //     ctx.beginPath();
-        //     ctx.arc(cursorPosition.x, cursorPosition.y, CURSOR_OBJECT_RADIUS, 0, 2 * Math.PI);
-        //     ctx.strokeStyle = 'rgba(255, 0, 0, 0.3)';
-        //     ctx.stroke();
-
-        //     // Draw cursor repel boundary (yellow, semi-transparent)
-        //     ctx.beginPath();
-        //     ctx.arc(cursorPosition.x, cursorPosition.y, CURSOR_REPEL_RADIUS, 0, 2 * Math.PI);
-        //     ctx.strokeStyle = 'rgba(255, 255, 0, 0.3)';
-        //     ctx.stroke();
-        // }
+        });
     };
 
     // Animation loop with frame rate control

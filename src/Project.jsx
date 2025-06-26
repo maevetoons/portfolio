@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Background from './components/Background';
@@ -35,7 +35,6 @@ const Project = () => {
         }
     }, [projectId]);
 
-    // Calculate gallery size after projectData is loaded
     useEffect(() => {
         if (projectData && projectData.galleryImages && projectData.galleryImages.length > 0) {
             let loaded = 0;
@@ -49,10 +48,8 @@ const Project = () => {
                     maxHeight = Math.max(maxHeight, img.naturalHeight);
                     loaded++;
                     if (loaded === projectData.galleryImages.length) {
-                        // Cap the max width/height
                         let width = Math.min(maxWidth, 840);
                         let height = Math.min(maxHeight, 1000);
-                        // If the widest image is > 840, scale height proportionally
                         if (maxWidth > 840) {
                             height = Math.round((840 / maxWidth) * maxHeight);
                             if (height > 1000) {
@@ -60,7 +57,6 @@ const Project = () => {
                             }
                             width = 840;
                         }
-                        // If the tallest image is > 1000, scale width proportionally
                         if (height > 1000) {
                             width = Math.round((1000 / height) * width);
                             height = 1000;
@@ -71,7 +67,6 @@ const Project = () => {
                 img.onerror = function () {
                     loaded++;
                     if (loaded === projectData.galleryImages.length) {
-                        // fallback if all fail
                         setGallerySize({ width: 840, height: 1000 });
                     }
                 };
@@ -137,7 +132,6 @@ const Project = () => {
         <Background>
             <NavBar />
             <div className="project-container">
-                {/* Project Header */}
                 <div className="project-header">
                     <div className="project-header-content">
                         <div className="project-main-image">
@@ -145,7 +139,7 @@ const Project = () => {
                                 src={projectData.mainImage}
                                 alt={projectData.title}
                                 onError={(e) => {
-                                    e.target.src = '/Shuksan.jpg'; // Use Shuksan as fallback
+                                    e.target.src = '/Shuksan.jpg';
                                 }}
                             />
                         </div>
@@ -169,9 +163,7 @@ const Project = () => {
                     </div>
                 </div>
 
-                {/* Project Body */}
                 <div className="project-body">
-                    {/* Gallery Section */}
                     {projectData.galleryImages && projectData.galleryImages.length > 0 && (
                         <div className="project-gallery" style={{ width: gallerySize.width || 840, height: gallerySize.height || 1000 }}>
                             <div className="gallery-container" style={{ width: '100%', height: '100%' }}>
@@ -181,7 +173,7 @@ const Project = () => {
                                     className="gallery-image"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }}
                                     onError={(e) => {
-                                        e.target.src = '/Shuksan.jpg'; // Use Shuksan as fallback
+                                        e.target.src = '/Shuksan.jpg';
                                     }}
                                 />
                                 {projectData.galleryImages.length > 1 && (
@@ -207,7 +199,6 @@ const Project = () => {
                         </div>
                     )}
 
-                    {/* Body Text */}
                     <div className="project-text">
                         {projectData.bodyText.split('\n\n').map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>
